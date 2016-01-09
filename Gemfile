@@ -5,7 +5,8 @@ ruby '2.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
-
+gem 'sass-rails', '~> 4.0.3'
+gem 'bootstrap-sass'
 # Use sqlite3 as the database for development and test
 #gem 'sqlite3', group: [:development, :test]
 group :development, :test do
@@ -27,7 +28,7 @@ end
 #gem 'rails_12factor', group: :production
 
 ## Add bootstrap for improving the look and feel
-gem 'bootstrap-sass'
+#gem 'bootstrap-sass'
 
 
 
