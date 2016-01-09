@@ -7,16 +7,29 @@ ruby '2.1.5'
 gem 'rails', '4.1.8'
 
 # Use sqlite3 as the database for development and test
-gem 'sqlite3', group: [:development, :test]
+#gem 'sqlite3', group: [:development, :test]
+group :development, :test do
+  gem 'sqlite3'
+end
+
 
 # use postgres as the database in production
-gem 'pg', group: :production
+#gem 'pg', group: :production
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+
 
 # Add 12 factor for Heroku
-gem 'rails_12factor', group: :production
+#gem 'rails_12factor', group: :production
 
 ## Add bootstrap for improving the look and feel
 gem 'bootstrap-sass'
+
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
